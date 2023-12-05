@@ -1,0 +1,164 @@
+body {
+    background-image: url("paperv2background.jpeg");
+}
+
+h1 {
+    text-align: center;
+    color: rgb(90, 0, 0);
+    font-size: 75px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 90);
+    font-size: 30px;
+    margin: 60px;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    background-color: rgb(90, 0, 0);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li a {
+    display: block;
+    color: rgb(189, 189, 189);
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    padding: 18px;
+}
+
+li a:hover {
+    background-color: rgb(45, 0, 0);
+}
+
+.img-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.img-container1 .overhead {
+    max-width: 90%;
+    height: auto;
+    margin: 30px;
+}
+
+.img-container1 .meditate {
+    max-width: 42%;
+    height: auto;
+    margin: 60px;
+}
+
+.para {
+    text-align: left; 
+    font-size: 25px;
+    margin: 50px;
+    color:rgb(0, 0, 90);
+    line-height: 2;
+}
+
+.img-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.ig {
+    max-width: 15%;
+    height: auto;
+    margin: 40px;
+}
+
+.x {
+    max-width: 15%;
+    height: auto;
+    margin: 40px;
+}
+
+.fb {
+    max-width: 15%;
+    height: auto;
+    margin: 40px;
+}
+
+.img-container2 .caption {
+    font-size: 20px;
+    color: rgb(0, 0, 90);
+}
+
+hr {
+    border: 1px solid rgb(0, 0, 90);
+    margin: 20px 0;
+}
+
+.gohome {
+    display: inline-block;
+    background-color: rgb(90, 0, 0);
+    text-align: center;
+    border: none;
+    padding: 15px 32px;
+    color: rgb(189, 189, 189);
+    font-size: 20px;
+    text-decoration: none; 
+}
+
+.gohome:hover {
+    background-color: rgb(45, 0, 0);
+    color: rgb(189, 189, 189);
+}
+
+.gohome a:visited {
+    color: rgb(142, 142, 142);
+}
+
+.gohome span {
+    display: block;
+}
+
+.input {
+    text-align: right;
+}
+
+input, button {
+    padding: 15px 45px;
+    margin: 30px;
+    color: rgb(189, 189, 189);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(90, 0, 0);
+}
+
+button:hover {
+    background-color: rgb(45, 0, 0);
+    color: rgb(189, 189, 189);
+}
+
+[class*="column"] { 
+    width: 80%;
+    display: block;
+    height:60vh;
+    font-size:1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: groove;
+    border-color:rgb(0, 0, 90);
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(153, 146, 255);
+ }
+
+ @media screen and (min-width:600px) {
+    [class*="column"] {
+      width:80%;
+    }
+    
+}
