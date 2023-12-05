@@ -21,6 +21,8 @@ function playGame() {
 
     var attempts = 0;
     var userGuess;
+    var difficulty = (range/maxAttempts);
+    difficulty = difficulty.toFixed(3);
 
     // Here we have the main game loop, which breaks if the user wins the game
     while (attempts < maxAttempts) {
@@ -30,12 +32,15 @@ function playGame() {
             alert('Please enter a valid integer.');
         } else {
             if (userGuess == targetNumber) {
-                document.getElementById("output").innerHTML = 'Congratulations you have completed the MindDigits challenge! You guessed the correct number (' + targetNumber + ') in ' + (attempts + 1) + ' attempts.';
+                document.getElementById("output").innerHTML = 'Congratulations you have completed the MindDigits challenge\
+                on difficulty rating ' + difficulty.toString() + '! You guessed the correct number (' + targetNumber + ') in ' + (attempts + 1) + ' attempts.';
 
                 break;
                                
-            } else {
+            } else if ((userGuess != targetNumber) && (attempts < (maxAttempts - 1))) {
                 alert('Incorrect guess. Try again!');
+            } else {
+                alert('Incorrect guess.');
             }
         }
 
