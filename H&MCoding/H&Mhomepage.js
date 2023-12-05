@@ -5,7 +5,7 @@ function randomInt(max) {
 
 function playGame() {
     // Here we get user input for the range of integers and handle possible input errors
-    var range = parseInt(prompt('Enter the range barrier of possible integers (e.g., 1 to X): '));
+    var range = parseInt(prompt('Enter the range of possible integers (range goes from 1 to this number): '));
     while (isNaN(range) || range <= 1) {
         range = parseInt(prompt('Please enter a valid integer greater than 1:'));
     }
@@ -49,6 +49,6 @@ function playGame() {
 
     // Here we have the message displayed if the user runs out of attempts
     if (attempts == maxAttempts) {
-        document.getElementById("output").innerHTML = 'Sorry, you\'ve run out of attempts. The correct number was ' + targetNumber + '.';
+        document.getElementById("output").innerHTML = 'Sorry, you\'ve run out of attempts on difficulty rating ' + difficulty.toString() + '. The correct number was ' + targetNumber + '.';
     }
 }
