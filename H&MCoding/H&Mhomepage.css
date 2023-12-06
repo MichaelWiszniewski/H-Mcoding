@@ -108,7 +108,9 @@ hr {
     padding: 15px 32px;
     color: rgb(189, 189, 189);
     font-size: 20px;
-    text-decoration: none; 
+    text-decoration: none;
+    border-style: groove;
+    border-color: rgb(189, 189, 189); 
 }
 
 .gohome:hover {
@@ -147,7 +149,7 @@ button:hover {
     width: 80%;
     display: block;
     height:60vh;
-    font-size:1.5em;
+    font-size:2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-style: groove;
     border-color:rgb(0, 0, 90);
@@ -161,4 +163,50 @@ button:hover {
       width:80%;
     }
     
+}
+
+#winners-container {
+    text-align: center;
+}
+
+.winnerTable {
+    margin: auto;
+    width: 30%;
+    border-collapse: collapse;
+    
+    
+}
+
+.winnerTable th, .winnerTable td {
+    border: 1px solid rgb(0, 0, 90);
+    padding: 10px;
+}
+
+.winnerTable th {
+    background-color: rgb(90, 0, 0);
+    color: rgb(189, 189, 189);
+}
+
+.winnerTable tbody td {
+    text-align: center;
+}
+
+.table {
+    margin: auto;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.pic {
+    width: 30%;
 }
